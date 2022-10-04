@@ -1,0 +1,69 @@
+# Git Basic Command
+## Basic command
+### Setting up An Initial Repository
+```
+mkdir repo
+cd repo
+git init
+echo "# Sample Git Repo" >> README.md
+git add .
+git commit -m "Initial Commit"
+```
+
+### Managing file in three stages
+```
+git diff
+git diff --cached
+git checkout
+git restore .
+git checkout HEAD [file-or-path]
+git restore --source=HEAD --staged [file-or-path]
+git rm --cached [file-or-path]
+git mv [filename] [filename]
+```
+
+### Reset and Revert
+```
+git reset --hard HEAD
+git reset --hard [commit]
+git reset --mixed [commit]
+git reset --soft [commit]
+git reset HEAD [file-or-path]
+git revert [commit]
+```
+
+### Working with Stash
+```
+git stash --include-untracked
+git stash list
+git stash apply
+git stash apply [stash-name]
+git stash clear
+```
+
+### Explore the history
+```
+git log --graph --decorate —-oneline
+git log --patch
+git log --grep [text]
+git log -G"regular expression" --patch
+git log -3 --oneline
+git log HEAD~5..HEAD^
+git log branch-name..master --oneline
+git show HEAD^
+git show HEAD~2
+git show HEAD@{"1 month ago"}
+git diff HEAD..HEAD^^
+git blame recipes/apple_pie.txt
+git show HEAD
+```
+
+### Fixing Mistake
+```
+git commit --amend
+git commit --amend -m "add new message here"
+git rebase -i
+git reflog show --all
+git reflog show HEAD
+git reflog refs/head/master
+```
