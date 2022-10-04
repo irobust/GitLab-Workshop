@@ -14,6 +14,8 @@ git commit -m "Initial Commit"
 ```
 git diff
 git diff --cached
+git diff HEAD
+git diff -w
 git checkout
 git restore .
 git checkout HEAD [file-or-path]
@@ -53,6 +55,9 @@ git log branch-name..master --oneline
 git show HEAD^
 git show HEAD~2
 git show HEAD@{"1 month ago"}
+git diff [commit]
+git diff --cached [commit]
+git diff [commit] [commit]
 git diff HEAD..HEAD^^
 git blame recipes/apple_pie.txt
 git show HEAD
@@ -63,6 +68,8 @@ git show HEAD
 git commit --amend
 git commit --amend -m "add new message here"
 git rebase -i
+git rebase -i origin/[branch-name]
+git rebase --continue
 git reflog show --all
 git reflog show HEAD
 git reflog refs/head/master

@@ -16,7 +16,7 @@ docker run --detach \
   --volume $GITLAB_HOME/logs:/var/log/gitlab:Z \
   --volume $GITLAB_HOME/data:/var/opt/gitlab:Z \
   --shm-size 256m \
-  gitlab/gitlab-ee:latest
+  gitlab/gitlab-ce:latest
 ```
 
 ### Checking status
