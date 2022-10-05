@@ -51,6 +51,8 @@ git log --grep [text]
 git log -G"regular expression" --patch
 git log -3 --oneline
 git log HEAD~5..HEAD^
+git log --since=2.minutes.ago
+git log --since="2022-10-01" --until="2022-10-05"
 git log branch-name..master --oneline
 git show HEAD^
 git show HEAD~2
