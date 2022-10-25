@@ -65,10 +65,16 @@ git blame recipes/apple_pie.txt
 git show HEAD
 ```
 
+### Git Tag
+```
+git tag [tagname] [commit] # lightweight tag (soft)
+git tag -a [tagname] -m "add some message here" [commit] # annotated tag (hard)
+```
+
 ### Fixing Mistake
 ```
 git commit --amend
-git commit --amend -m "add new message here"
+git commit --amend -m "add some message here"
 git rebase -i
 git rebase -i origin/[branch-name]
 git rebase --continue
