@@ -67,8 +67,10 @@ git show HEAD
 
 ### Git Tag
 ```
+git tag
 git tag [tagname] [commit] # lightweight tag (soft)
 git tag -a [tagname] -m "add some message here" [commit] # annotated tag (hard)
+git push origin --tags
 ```
 
 ### Fixing Mistake
