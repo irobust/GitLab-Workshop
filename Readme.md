@@ -12,9 +12,9 @@ docker run --detach \
   --publish 443:443 --publish 80:80 --publish 22:22 \
   --name gitlab \
   --restart always \
-  --volume $GITLAB_HOME/config:/etc/gitlab:Z \
-  --volume $GITLAB_HOME/logs:/var/log/gitlab:Z \
-  --volume $GITLAB_HOME/data:/var/opt/gitlab:Z \
+  --volume ${PWD}/config:/etc/gitlab:Z \
+  --volume ${PWD}/logs:/var/log/gitlab:Z \
+  --volume ${PWD}/data:/var/opt/gitlab:Z \
   --shm-size 256m \
   gitlab/gitlab-ce:latest
 ```
