@@ -65,15 +65,10 @@ From the open config file, we can configure VS Code to also serve as the diff to
 
 ```
 [diff]
-    tool = vscode-diff
-[difftool "vscode-diff"]
-    cmd = code --wait --diff $LOCAL $REMOTE
-```
-
-Next, we will set one more value:
-
-```
-git config --global --add difftool.prompt false
+	tool = vscode
+[difftool "vscode"]
+	cmd = code --wait --diff $LOCAL $REMOTE
+	prompt = false
 ```
 
 Now, we can test out our diff tool:
@@ -88,11 +83,9 @@ git difftool
 Next, we can update our merge tool to be VS Code as well.  We will need to edit our global config to include the following:
 
 ```
-[merge] 
-	tool = vscode-merge
-[mergetool]
-	keepBackup = false
-[mergetool "vscode-merge"]
+[merge]
+	tool = vscode
+[mergetool "vscode"]
 	cmd = code --wait $MERGED
 ```
 
