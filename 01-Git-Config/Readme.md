@@ -1,7 +1,7 @@
 # Git Config
 ### Setting Global Identity
 
-First, since we are starting with a new Git install, we need to set our global identity settings.  We will configure per-repository settings later this this clip.
+First, since we are starting with a new Git install, we need to set our global identity settings
 
 ```
 git config --global user.name "David Tucker"
