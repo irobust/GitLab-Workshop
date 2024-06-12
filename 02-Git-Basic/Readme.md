@@ -71,7 +71,10 @@ git tag [tagname] [commit] # lightweight tag (soft)
 git tag -a [tagname] -m "add some message here" [commit] # annotated tag (hard)
 git tag
 git tag -l "v1.0*"
-git show [tagname]
+git tag -n   # show firstline of annotation or commit message(lightweight)
+git tag -n5   # five lines
+git show [tagname]   # show commit hash
+git diff v1.0..v1.1
 git push origin [tagname]
 git push origin --tags
 ```
